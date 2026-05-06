@@ -26,7 +26,10 @@
     "sources": [
       "TDnet (Tokyo Stock Exchange)",
       "EDINET (Financial Services Agency)"
-    ]
+    ],
+    "non_business_day_note": "No disclosures on 憲法記念日 振替休日. Showing last business day: Friday, May 01, 2026.",
+    "requested_date": "2026-05-06",
+    "last_business_day": "2026-05-01"
   },
   "disclosures": [
     {
