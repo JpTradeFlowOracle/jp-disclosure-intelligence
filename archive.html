@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive — JP Disclosure Intelligence</title>
+  <meta name="description" content="Complete archive of all Japanese corporate disclosure data collected by JP Disclosure Intelligence. Browse by year and month.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0a0a0f; --ink-2: #2a2a35; --ink-3: #6b6b80;
+      --paper: #f5f4f0; --paper-2: #eceae4;
+      --accent: #c8402a; --accent-2: #1a3a5c; --gold: #c8960a;
+      --mono: 'DM Mono', monospace;
+      --display: 'Syne', sans-serif;
+      --body: 'DM Sans', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--body); background: var(--paper); color: var(--ink); }
+    header {
+      background: var(--ink); color: var(--paper);
+      padding: 28px 48px; display: flex;
+      align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .header-logo { font-family: var(--display); font-size: 1.1rem; font-weight: 800; }
+    .header-logo em { font-style: normal; color: var(--accent); }
+    nav {
+      background: var(--ink-2); padding: 0 48px;
+      display: flex; gap: 32px; height: 44px; align-items: center;
+      position: sticky; top: 0; z-index: 100;
+    }
+    nav a {
+      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(245,244,240,0.5);
+      text-decoration: none; transition: color 0.2s;
+    }
+    nav a:hover { color: var(--paper); }
+    nav a.active { color: var(--accent); }
+    .container { max-width: 1000px; margin: 0 auto; padding: 56px 48px; }
+    .page-title {
+      font-family: var(--display); font-size: 2rem; font-weight: 800;
+      letter-spacing: -0.02em; margin-bottom: 8px;
+    }
+    .page-subtitle {
+      font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em;
+      color: var(--ink-3); text-transform: uppercase; margin-bottom: 48px;
+    }
+    .arc-year { margin-bottom: 48px; }
+    .arc-year-heading {
+      display: flex; align-items: baseline; gap: 16px;
+      margin-bottom: 16px; padding-bottom: 12px;
+      border-bottom: 2px solid var(--ink);
+    }
+    .arc-year-num {
+      font-family: var(--display); font-size: 2rem; font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .arc-year-summary {
+      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--ink-3);
+    }
+    .arc-month {
+      background: white; border: 1px solid var(--paper-2);
+      border-radius: 4px; margin-bottom: 8px; overflow: hidden;
+    }
+    .arc-month summary {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 20px; cursor: pointer; list-style: none;
+      background: white; transition: background 0.15s;
+    }
+    .arc-month summary::-webkit-details-marker { display: none; }
+    .arc-month summary::before {
+      content: '▶';
+      font-size: 0.6rem; color: var(--ink-3);
+      margin-right: 10px; transition: transform 0.2s; flex-shrink: 0;
+    }
+    .arc-month[open] summary::before { transform: rotate(90deg); }
+    .arc-month summary:hover { background: var(--paper); }
+    .arc-month-label {
+      font-family: var(--display); font-size: 0.95rem; font-weight: 700;
+    }
+    .arc-month-count {
+      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--ink-3);
+    }
+    .arc-days { border-top: 1px solid var(--paper-2); }
+    .arc-day-row {
+      display: grid;
+      grid-template-columns: 36px 72px 140px 1fr;
+      align-items: center; gap: 12px;
+      padding: 10px 20px 10px 44px;
+      text-decoration: none; color: var(--ink);
+      border-bottom: 1px solid var(--paper-2);
+      transition: background 0.15s;
+    }
+    .arc-day-row:last-child { border-bottom: none; }
+    .arc-day-row:hover { background: #fafafa; }
+    .arc-dow {
+      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .arc-date {
+      font-family: var(--display); font-size: 0.88rem; font-weight: 600;
+    }
+    .arc-count {
+      font-family: var(--display); font-size: 1.1rem; font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .arc-unit {
+      font-family: var(--mono); font-size: 0.58rem; font-weight: 400;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--ink-3); margin-left: 4px;
+    }
+    .arc-cats { display: flex; flex-wrap: wrap; gap: 4px; }
+    .cat-tag {
+      font-family: var(--mono); font-size: 0.58rem;
+      padding: 2px 7px; background: var(--paper);
+      border-radius: 2px; color: var(--ink-3); white-space: nowrap;
+    }
+    footer {
+      background: var(--ink); color: rgba(245,244,240,0.4);
+      padding: 32px 48px; display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 48px;
+    }
+    footer p { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.05em; }
+    footer a { color: rgba(245,244,240,0.4); text-decoration: none; }
+    footer a:hover { color: var(--paper); }
+    @media (max-width: 768px) {
+      header { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+      nav { padding: 0 24px; gap: 20px; }
+      .container { padding: 32px 24px; }
+      .arc-day-row { grid-template-columns: 36px 64px 1fr; }
+      .arc-count { display: none; }
+      footer { padding: 24px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-logo">JP Disclosure <em>Intelligence</em></div>
+  </header>
+  <nav>
+    <a href="./">Home</a>
+    <a href="daily/today.html">Today</a>
+    <a href="archive.html" class="active">Archive</a>
+    <a href="data/today.json">JSON</a>
+    <a href="llms.txt">llms.txt</a>
+  </nav>
+  <div class="container">
+    <h1 class="page-title">Archive</h1>
+    <p class="page-subtitle">All 24 business days · 6,763 total filings</p>
+    
+        <section class="arc-year">
+          <h2 class="arc-year-heading">
+            <span class="arc-year-num">2026</span>
+            <span class="arc-year-summary">24 business days · 6,763 filings</span>
+          </h2>
+          
+          <details class="arc-month" open>
+            <summary>
+              <span class="arc-month-label">May 2026</span>
+              <span class="arc-month-count">3 days · 757 filings</span>
+            </summary>
+            <div class="arc-days">
+              <a href="daily/2026-05-08.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">May 08</span>
+                <span class="arc-count">68<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span></span>
+              </a>
+              <a href="daily/2026-05-07.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">May 07</span>
+                <span class="arc-count">266<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">📊 Earnings Report</span></span>
+              </a>
+              <a href="daily/2026-05-01.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">May 01</span>
+                <span class="arc-count">423<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">📄 Other</span><span class="cat-tag">🤝 M&A / Restructuring</span></span>
+              </a>
+            </div>
+          </details>
+          <details class="arc-month" open>
+            <summary>
+              <span class="arc-month-label">April 2026</span>
+              <span class="arc-month-count">21 days · 6,006 filings</span>
+            </summary>
+            <div class="arc-days">
+              <a href="daily/2026-04-30.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">Apr 30</span>
+                <span class="arc-count">587<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">💰 Dividend</span></span>
+              </a>
+              <a href="daily/2026-04-28.html" class="arc-day-row">
+                <span class="arc-dow">Tue</span>
+                <span class="arc-date">Apr 28</span>
+                <span class="arc-count">498<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">💰 Dividend</span></span>
+              </a>
+              <a href="daily/2026-04-27.html" class="arc-day-row">
+                <span class="arc-dow">Mon</span>
+                <span class="arc-date">Apr 27</span>
+                <span class="arc-count">365<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">📈 Earnings Forecast</span></span>
+              </a>
+              <a href="daily/2026-04-24.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">Apr 24</span>
+                <span class="arc-count">423<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">📊 Earnings Report</span></span>
+              </a>
+              <a href="daily/2026-04-23.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">Apr 23</span>
+                <span class="arc-count">203<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📈 Earnings Forecast</span><span class="cat-tag">🔄 Share Buyback</span></span>
+              </a>
+              <a href="daily/2026-04-22.html" class="arc-day-row">
+                <span class="arc-dow">Wed</span>
+                <span class="arc-date">Apr 22</span>
+                <span class="arc-count">185<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">💹 ETF / Fund</span><span class="cat-tag">🏷️ Listing / Delisting</span></span>
+              </a>
+              <a href="daily/2026-04-21.html" class="arc-day-row">
+                <span class="arc-dow">Tue</span>
+                <span class="arc-date">Apr 21</span>
+                <span class="arc-count">161<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">💹 ETF / Fund</span></span>
+              </a>
+              <a href="daily/2026-04-20.html" class="arc-day-row">
+                <span class="arc-dow">Mon</span>
+                <span class="arc-date">Apr 20</span>
+                <span class="arc-count">180<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">💹 ETF / Fund</span><span class="cat-tag">🤝 M&A / Restructuring</span></span>
+              </a>
+              <a href="daily/2026-04-17.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">Apr 17</span>
+                <span class="arc-count">190<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">👔 Management Change</span><span class="cat-tag">🤝 M&A / Restructuring</span></span>
+              </a>
+              <a href="daily/2026-04-16.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">Apr 16</span>
+                <span class="arc-count">177<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">🔄 Share Buyback</span></span>
+              </a>
+              <a href="daily/2026-04-15.html" class="arc-day-row">
+                <span class="arc-dow">Wed</span>
+                <span class="arc-date">Apr 15</span>
+                <span class="arc-count">214<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🤝 M&A / Restructuring</span><span class="cat-tag">🔄 Share Buyback</span></span>
+              </a>
+              <a href="daily/2026-04-14.html" class="arc-day-row">
+                <span class="arc-dow">Tue</span>
+                <span class="arc-date">Apr 14</span>
+                <span class="arc-count">701<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">📈 Earnings Forecast</span></span>
+              </a>
+              <a href="daily/2026-04-13.html" class="arc-day-row">
+                <span class="arc-dow">Mon</span>
+                <span class="arc-date">Apr 13</span>
+                <span class="arc-count">314<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">💹 ETF / Fund</span></span>
+              </a>
+              <a href="daily/2026-04-10.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">Apr 10</span>
+                <span class="arc-count">351<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">📈 Earnings Forecast</span></span>
+              </a>
+              <a href="daily/2026-04-09.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">Apr 09</span>
+                <span class="arc-count">197<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">📊 Earnings Report</span><span class="cat-tag">👔 Management Change</span></span>
+              </a>
+              <a href="daily/2026-04-08.html" class="arc-day-row">
+                <span class="arc-dow">Wed</span>
+                <span class="arc-date">Apr 08</span>
+                <span class="arc-count">196<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">💹 ETF / Fund</span><span class="cat-tag">📊 Earnings Report</span></span>
+              </a>
+              <a href="daily/2026-04-07.html" class="arc-day-row">
+                <span class="arc-dow">Tue</span>
+                <span class="arc-date">Apr 07</span>
+                <span class="arc-count">144<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">💹 ETF / Fund</span><span class="cat-tag">🔄 Share Buyback</span></span>
+              </a>
+              <a href="daily/2026-04-06.html" class="arc-day-row">
+                <span class="arc-dow">Mon</span>
+                <span class="arc-date">Apr 06</span>
+                <span class="arc-count">166<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">💹 ETF / Fund</span><span class="cat-tag">📊 Earnings Report</span></span>
+              </a>
+              <a href="daily/2026-04-03.html" class="arc-day-row">
+                <span class="arc-dow">Fri</span>
+                <span class="arc-date">Apr 03</span>
+                <span class="arc-count">204<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">💹 ETF / Fund</span></span>
+              </a>
+              <a href="daily/2026-04-02.html" class="arc-day-row">
+                <span class="arc-dow">Thu</span>
+                <span class="arc-date">Apr 02</span>
+                <span class="arc-count">150<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">📊 Earnings Report</span></span>
+              </a>
+              <a href="daily/2026-04-01.html" class="arc-day-row">
+                <span class="arc-dow">Wed</span>
+                <span class="arc-date">Apr 01</span>
+                <span class="arc-count">400<span class="arc-unit">filings</span></span>
+                <span class="arc-cats"><span class="cat-tag">📄 Other</span><span class="cat-tag">🔄 Share Buyback</span><span class="cat-tag">🤝 M&A / Restructuring</span></span>
+              </a>
+            </div>
+          </details>
+        </section>
+  </div>
+  <footer>
+    <p>JP Disclosure Intelligence · TDnet (TSE) + EDINET (FSA) · 2026-05-08 07:35 UTC</p>
+    <p><a href="data/index.json">index.json</a> · <a href="data/today.json">JSON API</a> · <a href="https://github.com/JpTradeFlowOracle/jp-disclosure-intelligence">GitHub</a></p>
+  </footer>
+</body>
+</html>

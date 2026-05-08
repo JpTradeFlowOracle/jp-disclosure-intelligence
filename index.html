@@ -253,6 +253,16 @@
       height: 1px;
       background: var(--paper-2);
     }
+    .view-all {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .view-all:hover { text-decoration: underline; }
 
     /* ── RECENT DAYS ── */
     .recent-grid {
@@ -511,6 +521,7 @@
     <div class="section-header">
       <h2>Recent Business Days</h2>
       <div class="section-line"></div>
+      <a href="archive.html" class="view-all">View All →</a>
     </div>
     <div class="recent-grid">
       
@@ -621,7 +632,7 @@
   </main>
 
   <footer>
-    <p>JP Disclosure Intelligence · Data: TDnet (TSE) + EDINET (FSA) · Updated 2026-05-08 07:15 UTC</p>
+    <p>JP Disclosure Intelligence · Data: TDnet (TSE) + EDINET (FSA) · Updated 2026-05-08 07:35 UTC</p>
     <p><a href="llms.txt">llms.txt</a> &nbsp;·&nbsp; <a href="data/today.json">JSON API</a> &nbsp;·&nbsp; <a href="https://github.com/JpTradeFlowOracle/jp-disclosure-intelligence">GitHub</a></p>
   </footer>
 </body>
