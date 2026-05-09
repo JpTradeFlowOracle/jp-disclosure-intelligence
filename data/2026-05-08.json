@@ -21,7 +21,7 @@
       "Earnings Forecast"
     ],
     "source": "TDnet (Tokyo Stock Exchange)",
-    "generated_at": "2026-05-09T06:50:23.354203Z",
+    "generated_at": "2026-05-09T06:56:50.220241Z",
     "total_edinet_filings": 47,
     "sources": [
       "TDnet (Tokyo Stock Exchange)",
@@ -8910,7 +8910,7 @@
       "time_jst": "17:30",
       "ticker": "30830",
       "company_jp": "スターシーズ",
-      "company_en": "starsies",
+      "company_en": "Star seeds Co., Ltd.",
       "title_jp": "（訂正・数値データ訂正）「2026年２月期 決算短信〔日本基準〕(連結)」の一部訂正について",
       "title_en": "(Correction) Earnings Report (Consolidated) for FY2026 ending February",
       "category": "Earnings Report",
