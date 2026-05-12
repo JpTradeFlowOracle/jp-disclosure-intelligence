@@ -1,8 +1,17 @@
 {
   "dates": [
     {
+      "date": "2026-05-12",
+      "total": 1033,
+      "top_categories": [
+        "Other",
+        "Earnings Report",
+        "Dividend"
+      ]
+    },
+    {
       "date": "2026-05-11",
-      "total": 101,
+      "total": 705,
       "top_categories": [
         "Other",
         "Earnings Report",
@@ -226,5 +235,5 @@
       ]
     }
   ],
-  "updated_at": "2026-05-11T04:23:20.668593Z"
+  "updated_at": "2026-05-12T07:51:54.512006Z"
 }
