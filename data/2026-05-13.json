@@ -1,11 +1,11 @@
 {
   "summary": {
     "date": "2026-05-13",
-    "total_filings": 42,
+    "total_filings": 52,
     "by_category": {
-      "Large Shareholder": 20,
-      "Share Buyback": 14,
-      "Extraordinary Report": 8
+      "Large Shareholder": 27,
+      "Share Buyback": 16,
+      "Extraordinary Report": 9
     },
     "top_categories": [
       "Large Shareholder",
@@ -13,7 +13,7 @@
       "Extraordinary Report"
     ],
     "source": "EDINET (Financial Services Agency of Japan)",
-    "generated_at": "2026-05-13T01:53:13.316427Z"
+    "generated_at": "2026-05-13T02:26:12.059220Z"
   },
   "filings": [
     {
@@ -561,6 +561,136 @@
       "edinet_code": "E01920",
       "sec_code": "65860",
       "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y383"
+    },
+    {
+      "doc_id": "S100Y3CR",
+      "doc_type": "Amendment to Large Shareholder Report",
+      "doc_type_code": "360",
+      "category": "Large Shareholder",
+      "company_jp": "岩田　匡平",
+      "company_en": "Kyohei Iwata",
+      "description": "訂正報告書（大量保有報告書・変更報告書）",
+      "submitted_at": "2026-05-13 10:51",
+      "edinet_code": "E35419",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y3CR"
+    },
+    {
+      "doc_id": "S100Y2ZG",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "株式会社Ｕｃａｐｉ",
+      "company_en": "Ucapi Co., Ltd.",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-13 10:54",
+      "edinet_code": "E41443",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y2ZG"
+    },
+    {
+      "doc_id": "S100Y3HF",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "バンドー化学株式会社",
+      "company_en": "Bando Chemical Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-05-13 11:00",
+      "edinet_code": "E01092",
+      "sec_code": "51950",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y3HF"
+    },
+    {
+      "doc_id": "S100Y2YO",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社フジシールインターナショナル",
+      "company_en": "Fuji Seal International Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-13 11:01",
+      "edinet_code": "E00725",
+      "sec_code": "78640",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y2YO"
+    },
+    {
+      "doc_id": "S100Y2QR",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "株式会社椿台",
+      "company_en": "Tsubakidai Co., Ltd.",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-13 11:03",
+      "edinet_code": "E26987",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y2QR"
+    },
+    {
+      "doc_id": "S100Y26W",
+      "doc_type": "Amendment to Large Shareholder Report",
+      "doc_type_code": "360",
+      "category": "Large Shareholder",
+      "company_jp": "日髙　有一",
+      "company_en": "Yuichi Hidaka",
+      "description": "訂正報告書（大量保有報告書・変更報告書）",
+      "submitted_at": "2026-05-13 11:05",
+      "edinet_code": "E23810",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y26W"
+    },
+    {
+      "doc_id": "S100Y1N2",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "日髙　有一",
+      "company_en": "Yuichi Hidaka",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-13 11:06",
+      "edinet_code": "E23810",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y1N2"
+    },
+    {
+      "doc_id": "S100Y2XB",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "Ｅｖｏ　Ｆｕｎｄ",
+      "company_en": "Evo Fund",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-13 11:14",
+      "edinet_code": "E11943",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y2XB"
+    },
+    {
+      "doc_id": "S100Y3HS",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "トヨタ自動車株式会社",
+      "company_en": "Toyota Motor Corporation",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-05-13 11:17",
+      "edinet_code": "E02144",
+      "sec_code": "72030",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y3HS"
+    },
+    {
+      "doc_id": "S100XX0Z",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "株式会社アニヴェルセルＨＯＬＤＩＮＧＳ",
+      "company_en": "ANNIVERSAIRE HOLDINGS Co., Ltd.",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-13 11:17",
+      "edinet_code": "E21764",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100XX0Z"
     }
   ]
 }
