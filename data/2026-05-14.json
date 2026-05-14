@@ -1,11 +1,11 @@
 {
   "summary": {
     "date": "2026-05-14",
-    "total_filings": 186,
+    "total_filings": 196,
     "by_category": {
-      "Extraordinary Report": 82,
-      "Share Buyback": 52,
-      "Large Shareholder": 47,
+      "Extraordinary Report": 87,
+      "Share Buyback": 54,
+      "Large Shareholder": 50,
       "Tender Offer (TOB)": 5
     },
     "top_categories": [
@@ -14,7 +14,7 @@
       "Large Shareholder"
     ],
     "source": "EDINET (Financial Services Agency of Japan)",
-    "generated_at": "2026-05-14T08:34:03.901089Z"
+    "generated_at": "2026-05-14T08:38:53.949710Z"
   },
   "filings": [
     {
@@ -1284,7 +1284,7 @@
       "doc_type_code": "180",
       "category": "Extraordinary Report",
       "company_jp": "アストマックス株式会社",
-      "company_en": "アストマックス株式会社",
+      "company_en": "Astomax Co., Ltd.",
       "description": "臨時報告書",
       "submitted_at": "2026-05-14 14:38",
       "edinet_code": "E26813",
@@ -2434,6 +2434,136 @@
       "edinet_code": "E03147",
       "sec_code": "98530",
       "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y453"
+    },
+    {
+      "doc_id": "S100Y451",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "Ｖｉｔａｌｙ　Ｂｅｚｒｏｄｎｙｋｈ",
+      "company_en": "Vitaly Bezrodnykh",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-14 16:42",
+      "edinet_code": "E41861",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y451"
+    },
+    {
+      "doc_id": "S100Y419",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "株式会社ＩＤホールディングス",
+      "company_en": "ID Holdings Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-05-14 16:43",
+      "edinet_code": "E05017",
+      "sec_code": "47090",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y419"
+    },
+    {
+      "doc_id": "S100Y459",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社シー・ヴイ・エス・ベイエリア",
+      "company_en": "CVS Bay Area Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-14 16:45",
+      "edinet_code": "E03372",
+      "sec_code": "26870",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y459"
+    },
+    {
+      "doc_id": "S100Y41O",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社ディー・エヌ・エー",
+      "company_en": "DeNA Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-14 16:46",
+      "edinet_code": "E05460",
+      "sec_code": "24320",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y41O"
+    },
+    {
+      "doc_id": "S100Y45M",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "ジェイファーマ株式会社",
+      "company_en": "J-Pharma Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-14 16:50",
+      "edinet_code": "E41488",
+      "sec_code": "520A0",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y45M"
+    },
+    {
+      "doc_id": "S100Y44X",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "ゼナーアセットマネジメントエルエルピー",
+      "company_en": "Zener Asset Management LLP",
+      "description": "変更報告書",
+      "submitted_at": "2026-05-14 16:51",
+      "edinet_code": "E39665",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y44X"
+    },
+    {
+      "doc_id": "S100Y43K",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社　セキド",
+      "company_en": "Sekido Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-14 16:52",
+      "edinet_code": "E03160",
+      "sec_code": "98780",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y43K"
+    },
+    {
+      "doc_id": "S100Y45P",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "リビン・テクノロジーズ株式会社",
+      "company_en": "Livin Technologies Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-05-14 16:58",
+      "edinet_code": "E34513",
+      "sec_code": "44450",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y45P"
+    },
+    {
+      "doc_id": "S100Y3KU",
+      "doc_type": "Amendment to Large Shareholder Report",
+      "doc_type_code": "360",
+      "category": "Large Shareholder",
+      "company_jp": "加藤　公一レオ",
+      "company_en": "Leo Kato Koichi",
+      "description": "訂正報告書（大量保有報告書・変更報告書）",
+      "submitted_at": "2026-05-14 17:00",
+      "edinet_code": "E36422",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y3KU"
+    },
+    {
+      "doc_id": "S100Y45V",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社日本創発グループ",
+      "company_en": "Nippon Sohatsu Group Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-05-14 17:10",
+      "edinet_code": "E30930",
+      "sec_code": "78140",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y45V"
     }
   ]
 }
