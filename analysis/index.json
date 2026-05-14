@@ -1,6 +1,15 @@
 {
   "dates": [
     {
+      "date": "2026-05-14",
+      "top_themes": [
+        "Evolution of Takeover Defense Strategies",
+        "Enhanced Corporate Governance and Shareholder Protection",
+        "Internal Corporate Restructuring for Efficiency"
+      ],
+      "filing_count": 7
+    },
+    {
       "date": "2026-05-13",
       "top_themes": [
         "Optimistic Growth Outlook & Strategic Investment",
@@ -10,5 +19,5 @@
       "filing_count": 2
     }
   ],
-  "updated_at": "2026-05-13T02:55:11.977065Z"
+  "updated_at": "2026-05-14T10:02:21.385722Z"
 }
