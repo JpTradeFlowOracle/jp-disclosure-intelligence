@@ -1,6 +1,11 @@
 {
   "dates": [
     {
+      "date": "2026-06-02",
+      "top_themes": [],
+      "filing_count": 10
+    },
+    {
       "date": "2026-06-01",
       "top_themes": [
         "Internal Group Restructuring and Business Consolidation",
@@ -51,5 +56,5 @@
       "filing_count": 2
     }
   ],
-  "updated_at": "2026-06-01T09:59:36.714969Z"
+  "updated_at": "2026-06-02T11:18:38.733933Z"
 }
