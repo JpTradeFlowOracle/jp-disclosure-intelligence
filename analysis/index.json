@@ -1,6 +1,11 @@
 {
   "dates": [
     {
+      "date": "2026-06-03",
+      "top_themes": [],
+      "filing_count": 4
+    },
+    {
       "date": "2026-06-02",
       "top_themes": [],
       "filing_count": 10
@@ -56,5 +61,5 @@
       "filing_count": 2
     }
   ],
-  "updated_at": "2026-06-02T11:18:38.733933Z"
+  "updated_at": "2026-06-03T04:46:27.478664Z"
 }
