@@ -1,11 +1,11 @@
 {
   "summary": {
     "date": "2026-06-05",
-    "total_filings": 337,
+    "total_filings": 349,
     "by_category": {
-      "Large Shareholder": 234,
-      "Share Buyback": 62,
-      "Extraordinary Report": 39,
+      "Large Shareholder": 237,
+      "Share Buyback": 67,
+      "Extraordinary Report": 43,
       "Parent Company Report": 1,
       "Tender Offer (TOB)": 1
     },
@@ -15,7 +15,7 @@
       "Extraordinary Report"
     ],
     "source": "EDINET (Financial Services Agency of Japan)",
-    "generated_at": "2026-06-05T08:13:52.398018Z"
+    "generated_at": "2026-06-06T10:20:05.014584Z"
   },
   "filings": [
     {
@@ -4398,6 +4398,162 @@
       "edinet_code": "E40318",
       "sec_code": null,
       "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y95C"
+    },
+    {
+      "doc_id": "S100Y946",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "株式会社カネカ",
+      "company_en": "Kaneka Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-06-05 16:31",
+      "edinet_code": "E00879",
+      "sec_code": "41180",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y946"
+    },
+    {
+      "doc_id": "S100Y8P7",
+      "doc_type": "Amendment to Extraordinary Report",
+      "doc_type_code": "190",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社オープンハウスグループ",
+      "company_en": "Open House Group Co., Ltd.",
+      "description": "訂正臨時報告書",
+      "submitted_at": "2026-06-05 16:42",
+      "edinet_code": "E27842",
+      "sec_code": "32880",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y8P7"
+    },
+    {
+      "doc_id": "S100Y971",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "伊澤タオル株式会社",
+      "company_en": "Izawa Towel Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-06-05 16:45",
+      "edinet_code": "E40674",
+      "sec_code": "365A0",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y971"
+    },
+    {
+      "doc_id": "S100Y97E",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "ｕｎｂａｎｋｅｄ株式会社",
+      "company_en": "unbanked inc.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-06-05 16:48",
+      "edinet_code": "E03717",
+      "sec_code": "87460",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y97E"
+    },
+    {
+      "doc_id": "S100Y97O",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社学びエイド",
+      "company_en": "Manabi Aid Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-06-05 16:50",
+      "edinet_code": "E39653",
+      "sec_code": "184A0",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y97O"
+    },
+    {
+      "doc_id": "S100Y97F",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "エムスリー株式会社",
+      "company_en": "M3 Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-06-05 16:51",
+      "edinet_code": "E05425",
+      "sec_code": "24130",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y97F"
+    },
+    {
+      "doc_id": "S100Y97Q",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "株式会社ティラド",
+      "company_en": "T.RAD Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-06-05 16:53",
+      "edinet_code": "E02155",
+      "sec_code": "72360",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y97Q"
+    },
+    {
+      "doc_id": "S100Y94H",
+      "doc_type": "Share Buyback Status Report",
+      "doc_type_code": "220",
+      "category": "Share Buyback",
+      "company_jp": "ＲＩＺＡＰグループ株式会社",
+      "company_en": "RIZAP Group Co., Ltd.",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submitted_at": "2026-06-05 16:59",
+      "edinet_code": "E00518",
+      "sec_code": "29280",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y94H"
+    },
+    {
+      "doc_id": "S100Y7VP",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "シンプレクス・アセット・マネジメント株式会社",
+      "company_en": "Simplex Asset Management Co., Ltd.",
+      "description": "変更報告書（特例対象株券等）",
+      "submitted_at": "2026-06-05 17:02",
+      "edinet_code": "E10670",
+      "sec_code": null,
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y7VP"
+    },
+    {
+      "doc_id": "S100Y97Z",
+      "doc_type": "Extraordinary Report (Domestic Specified Securities)",
+      "doc_type_code": "180",
+      "category": "Extraordinary Report",
+      "company_jp": "株式会社エターナルホスピタリティグループ",
+      "company_en": "Eternal Hospitality Group Co., Ltd.",
+      "description": "臨時報告書",
+      "submitted_at": "2026-06-05 17:03",
+      "edinet_code": "E30699",
+      "sec_code": "31930",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y97Z"
+    },
+    {
+      "doc_id": "S100Y973",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "前澤工業株式会社",
+      "company_en": "Maezawa Industries Co., Ltd.",
+      "description": "変更報告書",
+      "submitted_at": "2026-06-05 17:03",
+      "edinet_code": "E01672",
+      "sec_code": "64890",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y973"
+    },
+    {
+      "doc_id": "S100Y987",
+      "doc_type": "Large Shareholder Report / Amendment",
+      "doc_type_code": "350",
+      "category": "Large Shareholder",
+      "company_jp": "前澤工業株式会社",
+      "company_en": "Maezawa Industries Co., Ltd.",
+      "description": "大量保有報告書",
+      "submitted_at": "2026-06-05 17:11",
+      "edinet_code": "E01672",
+      "sec_code": "64890",
+      "doc_url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S1_S100Y987"
     }
   ]
 }
